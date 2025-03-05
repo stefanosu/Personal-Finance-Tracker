@@ -3,6 +3,43 @@
 ## Overview
 The **Personal Finance Tracker** is a full-stack application designed to help users manage their finances. The backend is built with **C# (ASP.NET Core)** and the frontend is developed using **Next.js (TypeScript)**.
 
+## Project structure
+
+personal-finance-tracker/
+│── backend/                      # C# ASP.NET Core backend
+│   ├── Controllers/               # API controllers (Transactions, Auth, etc.)
+│   ├── Models/                    # Data models (User, Transaction, etc.)
+│   ├── Services/                  # Business logic services
+│   ├── Data/                      # Database context and migrations
+│   ├── Middleware/                 # Authentication, logging, etc.
+│   ├── appsettings.json            # Config file (DB connection, secrets)
+│   ├── Program.cs                  # Main entry point
+│   ├── Startup.cs                  # Configure services & middleware
+│   ├── README.md                    # Backend documentation
+│
+│── frontend/                      # Next.js frontend
+│   ├── public/                     # Static assets (icons, images)
+│   ├── src/
+│   │   ├── components/             # Reusable UI components
+│   │   ├── contexts/               # React Context API state management
+│   │   ├── hooks/                  # Custom hooks
+│   │   ├── layouts/                # Layout components
+│   │   ├── pages/                  # Next.js pages (dashboard, transactions, etc.)
+│   │   ├── services/               # API calls to backend
+│   │   ├── styles/                 # CSS/SCSS files
+│   │   ├── types/                  # TypeScript interfaces
+│   │   ├── utils/                  # Helper functions
+│   │   ├── config.ts               # Environment variables & API URLs
+│   │   ├── theme.ts                # Theme settings
+│   ├── .env.local                  # Environment variables
+│   ├── next.config.js              # Next.js config
+│   ├── tsconfig.json               # TypeScript config
+│   ├── README.md                    # Frontend documentation
+│
+│── docker-compose.yml              # Docker for backend & frontend
+│── README.md                       # Main documentation
+
+
 ---
 
 ## Backend (ASP.NET Core)
