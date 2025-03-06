@@ -5,6 +5,7 @@ The **Personal Finance Tracker** is a full-stack application designed to help us
 
 ## Project structure
 
+```
 personal-finance-tracker/
 │── backend/                      # C# ASP.NET Core backend
 │   ├── Controllers/               # API controllers (Transactions, Auth, etc.)
@@ -38,7 +39,7 @@ personal-finance-tracker/
 │
 │── docker-compose.yml              # Docker for backend & frontend
 │── README.md                       # Main documentation
-
+```
 
 ---
 
