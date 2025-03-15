@@ -13,9 +13,9 @@ namespace MyBackendApp.Controllers
         {
             var users = new[]
             {
-                new { Id = 1, Name = "Michael" },
-                new { Id = 2, Name = "Stefan" }, 
-                new { Id = 3, Name = "Bear" }
+                new { Id = 1, FirstName = "Michael", LastName = "" , Email= "", PasswordHash= "", },
+                new { Id = 1, FirstName = "Michael", LastName = "" , Email= "", PasswordHash= "", },
+                new { Id = 1, FirstName = "Michael", LastName = "" , Email= "", PasswordHash= "", },
             };
 
             return Success(users, "Users retrieved successfully");
